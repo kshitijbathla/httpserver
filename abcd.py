@@ -63,7 +63,7 @@ class Server:
 def graceful_shutdown(sig, dummy):
     """ This function shuts down the server. It's triggered
     by SIGINT signal """
-    self.shutdown() #shut down the server
+    s.shutdown() #shut down the server
     import sys
     sys.exit(1)
 
